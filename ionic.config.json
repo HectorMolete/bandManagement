@@ -1,0 +1,7 @@
+{
+  "name": "Sunrise",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
