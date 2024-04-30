@@ -3,12 +3,14 @@
     <ion-grid>
       <ion-row class="ion-justify-content-end">   
 
+        
       <ion-col class="notification" size="3" style="display: flex; justify-content: flex-end;">
         <ion-icon name="search-outline" size="large" color="primary"></ion-icon>
-       </ion-col>
+      </ion-col>
+
       <ion-col class="notification" size="auto" style="display: flex; justify-content: flex-end; width:30px">
         <ion-icon name="notifications-outline" size="large" color="primary"></ion-icon>
-     </ion-col>
+      </ion-col>
 
       </ion-row>
     </ion-grid>
@@ -20,10 +22,12 @@
     <ion-grid>
       <ion-row class="header-row">
 
-        <ion-col size = "auto">
-          <ion-img class = "profile-picture"  src="../../assets/icon/profile.jpg"></ion-img>
+        <ion-col size="auto" style="display: flex; flex-direction: column; align-items: center;">
+          <ion-img class="profile-picture" src="../../assets/icon/profile.jpg"></ion-img>
+          <!-- <ion-icon name="add" size="large" color="primary" style="position: absolute; bottom: -10px;right:5px;font-weight: bolder;"></ion-icon> -->
+          <ion-img name="add" src="../../assets/icon/plus.png" style="position: absolute; bottom: -1px;right:5px; width:20px"> </ion-img>
         </ion-col>
-
+  
         <ion-col style="display: flex;justify-content: flex-start;flex-direction: column; width: 30px;">
          <ion-text style="font-weight: bold; font-size:large;"> Carlin</ion-text>
          <ion-text style="font-size:small;"> Euphonium</ion-text>
@@ -57,7 +61,7 @@
           You attended, Yes!, Now mark the register!!
         </ion-card-content>
       
-        <ion-button shape="round" style="padding-bottom: 5px;">Attended</ion-button>
+        <ion-button shape="round" style="padding-bottom: 10px;">Attend</ion-button>
       </ion-card>
     </ion-toolbar>
 
@@ -65,8 +69,10 @@
 
       
       <div class="perfomance ion-justify-content-center" style="display: flex; align-items: center; color:#AEB6C8;">
+        <ion-icon name="chevron-back" style="margin-right: 10px;"></ion-icon>
         <ion-icon name="calendar-outline" size="large" style="margin-right: 2px;"></ion-icon>
         <ion-text size="large">May</ion-text>
+        <ion-icon name="chevron-forward" style="margin-left: 10px;"></ion-icon>
       </div>
 
       <ion-card class="chart">
