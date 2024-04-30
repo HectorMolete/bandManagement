@@ -1,17 +1,89 @@
-<ion-header [translucent]="true">
+<ion-header class="header" [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-grid>
+      <ion-row class="ion-justify-content-end">   
+
+      <ion-col class="notification" size="3" style="display: flex; justify-content: flex-end;">
+        <ion-icon name="search-outline" size="large" color="primary"></ion-icon>
+       </ion-col>
+      <ion-col class="notification" size="auto" style="display: flex; justify-content: flex-end; width:30px">
+        <ion-icon name="notifications-outline" size="large" color="primary"></ion-icon>
+     </ion-col>
+
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+<ion-header class="header-2" [translucent]="true" style="border: none; box-shadow: none;">
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row class="header-row">
+
+        <ion-col size = "auto">
+          <ion-img class = "profile-picture"  src="../../assets/icon/profile.jpg"></ion-img>
+        </ion-col>
+
+        <ion-col>
+         <ion-text style="font-weight: bold; font-size:large"> Carlin</ion-text>
+         <ion-text style="font-size:small;"> Euphonium</ion-text>
+        </ion-col>
+
+        <ion-col></ion-col>
+
+        <ion-col style="display: flex; align-items: center; justify-content: flex-end; width: 30px;">
+          <ion-text style="font-weight: bold; font-size: large;">Sunrise, date</ion-text>
+          <ion-text style="font-size: small;">Current Time</ion-text>
+        </ion-col>
+        
+
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true" style="background-color: #FFFFFF; box-shadow: none; border: none;">
+  <ion-header style="border: none;">
+    <ion-toolbar style="border: none;">
+
+      <ion-card class="card-1 ion-text-center" style="background-image: url(../../assets/icon/backround-trombone.jpg);">
+        <ion-card-header>
+          <ion-card-title style="padding-top: 5px; color: #FFFFFF;">Present!</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content style="padding-bottom: 10px; color:#FFFFFF">
+          You attended, Yes!, Now mark the register!!
+        </ion-card-content>
+      
+        <ion-button shape="round" style="padding-bottom: 5px;">Attended</ion-button>
+      </ion-card>
+    </ion-toolbar>
+
+    <ion-toolbar style="border: none;">
+
+      
+      <div class="perfomance ion-justify-content-center" style="display: flex; align-items: center; color:#AEB6C8;">
+        <ion-icon name="calendar-outline" size="large" style="margin-right: 2px;"></ion-icon>
+        <ion-text size="large">May</ion-text>
+      </div>
+
+      <ion-card class="chart">
+
+        <ion-card-header>
+          
+        </ion-card-header>
+
+        <ion-card-content>
+          <canvas #doughnutCanvas></canvas>
+        </ion-card-content>
+
+      </ion-card>
+      
+
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>
